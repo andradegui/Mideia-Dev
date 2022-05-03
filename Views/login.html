@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Login | Cadastro</title>
+</head>
+
+<body>
+  <h1>Mideia</h1>
+
+  <!-- Form Cadastrar -->
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="">
+        <h3>Crie sua conta!</h3>
+
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email">
+
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="cpf">Cpf: </label>
+        <input type="text" name="cpf" id="cpf">
+
+        <label for="telefone">Telefone: </label>
+        <input type="tel" name="telefone" id="telefone">
+
+        <!-- Talvez aqui seja um input type submit -->
+        <button>Cadastrar</button> 
+      </form>
+    </div>
+
+    <!-- Form Login -->
+    <div class="form-container sign-up-container">
+      <form action="">
+        <h3>Entrar</h3>
+
+        <label for="E-mail">E-mail: </label>
+        <input type="email" id="userEmail">
+
+        <label for="Senha">Senha: </label>
+        <input type="password" name="userPass" id="userPass">
+
+        <button>Entrar</button> 
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-painel overlay-left">
+          <p>Bem vindo de volta!</p>
+          <p>Para se conectar com o mideia, faça login com suas informações pessoais</p>
+          <button class="ghost" id="signIn">Entrar</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <p>Olá, Amigo(a)!</p>
+          <p>Preencha suas informações pessoais, e crie mideias!</p>
+          <button class="ghost" id="signUp">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>2022 Mideia</p>
+  </footer>
+
+  <script src="Controllers/animacao.js"></script>
+</body>
+
+</html>
