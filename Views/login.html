@@ -19,11 +19,12 @@
 
 <body>
   <h1>Mideia</h1>
+  <p id="result"></p>
 
   <!-- Form Cadastrar -->
   <div class="container" id="container">
     <div class="form-container sign-up-container">
-      <form action="">
+      <form>
         <h3>Crie sua conta!</h3>
 
         <label for="nome">Nome: </label>
@@ -42,13 +43,13 @@
         <input type="tel" name="telefone" id="telefone">
 
         <!-- Talvez aqui seja um input type submit -->
-        <button>Cadastrar</button> 
+        <button type="submit" onclick="cadastrarUser()">Cadastrar</button> 
       </form>
     </div>
 
     <!-- Form Login -->
     <div class="form-container sign-in-container">
-      <form action="">
+      <form>
         <h3>Entrar</h3>
 
         <label for="E-mail">E-mail: </label>
@@ -57,7 +58,7 @@
         <label for="Senha">Senha: </label>
         <input type="password" name="userPass" id="userPass">
 
-        <button>Entrar</button> 
+        <button type="submit" onclick="login()">Entrar</button> 
       </form>
     </div>
 
@@ -82,6 +83,7 @@
   </footer>
 
   <script src="/Controllers/animacao.js"></script>
+  <script src="/Controllers/autenticacao.js"></script>
 </body>
 
 </html>
