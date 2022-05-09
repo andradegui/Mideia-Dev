@@ -1,5 +1,38 @@
+let labelNome = document.querySelector("#labelNome");
+let nome = document.querySelector("#nome");
+
+let labelEmail = document.getElementById("labelEmail").value;
+let email = document.getElementById("email").value;
+
+let labelSenha = document.getElementById("labelSenha").value;
+let senha = document.getElementById("senha").value;
+
+let labelCpf = document.getElementById("labelCpf").value;
+let cpf = document.getElementById("cpf").value;
+
+let labelTelefone = document.getElementById("labelTelefone").value;
+let telefone = document.getElementById("telefone").value;
+
+//Validação de nome
+nome.addEventListener("keyup", () => {
+  if (nome.value.length <= 2) {
+    labelNome.setAttribute("style", "color: red");
+    labelNome.innerHTML = "Nome *Minímo 3 caracteres";
+    nome.setAttribute("style", "background-color: red");
+  } else if (nome.value.length >= 50) {
+    labelNome.setAttribute("style", "color: red;");
+    labelNome.innerHTML = "Nome *Máximo 50 caracteres";
+    nome.setAttribute("style", "background-color: red");
+  } else {
+    labelNome.setAttribute("style", "color:#4ae94a");
+    labelNome.innerHTML = "Nome";
+    nome.setAttribute("style", "background-color: #4ae94a");
+  }
+});
+
+function cadastraUser() {}
+
 // function cadastrarUser() {
-//     event.preventDefault();
 
 //     let nome = document.getElementById("nome").value;
 //     let email = document.getElementById("email").value;
