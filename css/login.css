@@ -15,9 +15,16 @@ body {
     margin: 20px 0 50px;
 }
 
+
+
 h1 {
     font-weight: bold;
     margin: 0;
+    display: inline-block;    
+}
+
+.logo{
+    display: inline-block;
 }
 
 h3 {
@@ -118,6 +125,10 @@ input {
     width: 50%;
     opacity: 0;
     z-index: 1;
+}
+
+.labelBold{
+    font-weight: bold;
 }
 
 .container.right-panel-active .sign-up-container {

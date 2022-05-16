@@ -4,46 +4,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/logo.svg" />
+  <link rel="stylesheet" href="/css/login.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
-    integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="/css/style.css" />
   <title>Login | Cadastro</title>
 </head>
 
 <body>
+  <div class="logo">
+    <img src="/logo.svg" alt="Logo Mideia" style="width: 80px; height: 80px;">
+  </div>
   <h1>Mideia</h1>
-  <p id="result"></p>
 
-  <!-- Form Cadastrar -->
+  
   <div class="container" id="container">
-    <div class="form-container sign-up-container">
+    <!-- Form Cadastrar -->
+    <div class="form-container sign-up-container">      
       <form>
         <h3>Crie sua conta!</h3>
 
-        <label id="labelNome" for="nome">Nome: </label>
-        <input type="text" name="nome" id="nome">
+        <label id="labelNome" class="labelBold" for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Guilherme Lima" required>
 
-        <label id="labelEmail" for="email">E-mail: </label>
-        <input type="email" name="email" id="email">
+        <label id="labelEmail" class="labelBold" for="email">E-mail: </label>
+        <input type="email" name="email" id="email" autocomplete="off" placeholder="seuemail@email.com" required>
 
-        <label id="labelSenha" for="senha">Senha: </label>
-        <input type="password" name="senha" id="senha">
+        <label id="labelSenha" class="labelBold" for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" autocomplete="off" placeholder="Ao menos 1 letra maiúscula e 1 número" required>
 
-        <label id="labelCpf" for="cpf">Cpf: </label>
-        <input type="text" name="cpf" id="cpf">
+        <label id="labelCpf" class="labelBold" for="cpf">Cpf: </label>
+        <input type="text" name="cpf" id="cpf" autocomplete="off" placeholder="000.000.000-00" required>
 
-        <label id="labelTelefone" for="telefone">Telefone: </label>
-        <input type="tel" name="telefone" id="telefone">
+        <label id="labelTelefone" class="labelBold" for="telefone">Telefone: </label>
+        <input type="tel" name="telefone" id="telefone" autocomplete="off" placeholder="55 11 90000-0000" required>
 
         <!-- Talvez aqui seja um input type submit -->
-        <button type="submit" onclick="cadastrarUser()">Cadastrar</button> 
+        <button type="submit" onclick="cadastrarUser()">Cadastrar</button>
       </form>
     </div>
 
@@ -52,23 +48,26 @@
       <form>
         <h3>Entrar</h3>
 
-        <label for="E-mail">E-mail: </label>
-        <input type="email" id="userEmail">
+        <label for="E-mail" class="labelBold">E-mail: </label>
+        <input type="email" id="userEmail" autocomplete="off" required>
 
-        <label for="Senha">Senha: </label>
-        <input type="password" name="userPass" id="userPass">
+        <label for="Senha" class="labelBold">Senha: </label>
+        <input type="password" name="userPass" id="userPass" autocomplete="off" required>
 
-        <button type="submit" onclick="login()">Entrar</button> 
+        <button type="submit" onclick="login()">Entrar</button>
       </form>
     </div>
 
-    <div class="overlay-container">
+    
+    <div class="overlay-container">     
       <div class="overlay">
+         <!-- Card Bem Vindo -->
         <div class="overlay-panel overlay-left">
           <p>Bem vindo de volta!</p>
           <p>Se conecte com o mideia, faça login com suas informações pessoais</p>
           <button class="ghost" id="signIn">Entrar</button>
         </div>
+        <!-- Card Cadastro -->
         <div class="overlay-panel overlay-right">
           <p>Olá, Amigo(a)!</p>
           <p>Preencha suas informações pessoais, e crie mideias!</p>
