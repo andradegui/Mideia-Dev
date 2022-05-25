@@ -16,12 +16,18 @@
   </div>
   <h1>Mideia</h1>
 
-  
+
   <div class="container" id="container">
+
     <!-- Form Cadastrar -->
-    <div class="form-container sign-up-container">      
+    <div class="form-container sign-up-container">
       <form>
+        <div id="msgErro"></div>
+        <div id="msgSuccess"></div>        
         <h3>Crie sua conta!</h3>
+
+        <div id="msgErro"></div>
+        <div id="msgSuccess"></div>
 
         <label id="labelNome" class="labelBold" for="nome">Nome: </label>
         <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Guilherme Lima" required>
@@ -30,7 +36,8 @@
         <input type="email" name="email" id="email" autocomplete="off" placeholder="seuemail@email.com" required>
 
         <label id="labelSenha" class="labelBold" for="senha">Senha: </label>
-        <input type="password" name="senha" id="senha" autocomplete="off" placeholder="Ao menos 1 letra maiúscula e 1 número" required>
+        <input type="password" name="senha" id="senha" autocomplete="off"
+          placeholder="Ao menos 1 letra maiúscula e 1 número" required>
 
         <label id="labelCpf" class="labelBold" for="cpf">Cpf: </label>
         <input type="text" name="cpf" id="cpf" autocomplete="off" placeholder="000.000.000-00" required>
@@ -39,7 +46,7 @@
         <input type="tel" name="telefone" id="telefone" autocomplete="off" placeholder="55 11 90000-0000" required>
 
         <!-- Talvez aqui seja um input type submit -->
-        <button type="submit" onclick="cadastrarUser()">Cadastrar</button>
+        <button type="submit" onclick='cadastrarUser()'>Cadastrar</button>
       </form>
     </div>
 
@@ -58,10 +65,10 @@
       </form>
     </div>
 
-    
-    <div class="overlay-container">     
+
+    <div class="overlay-container">
       <div class="overlay">
-         <!-- Card Bem Vindo -->
+        <!-- Card Bem Vindo -->
         <div class="overlay-panel overlay-left">
           <p>Bem vindo de volta!</p>
           <p>Se conecte com o mideia, faça login com suas informações pessoais</p>

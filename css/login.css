@@ -103,6 +103,24 @@ input {
     min-height: 480px;
 }
 
+#msgErro{
+    text-align: center;
+    color: #EA5A5A;
+    background-color: #de1414;
+    padding:10px;
+    border-radius:4px;
+    display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #4ae94a;
+    background-color: #05c505;
+    padding:10px;
+    border-radius:4px;
+    display: none;
+}
+
 .form-container {
     position: absolute;
     top: 0;
