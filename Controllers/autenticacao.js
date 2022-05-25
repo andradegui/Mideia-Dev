@@ -104,22 +104,22 @@ telefone.addEventListener("keyup", () => {
 });
 
 function cadastraUser() {
-  if (validNome && validEmail && validTel && validSenha && validCpf) {
+  // if (validNome && validEmail && validTel && validSenha && validCpf) {
 
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]'); //pode-se add + de 1 user
 
     listaUser.push({
-      nome : nome.value,
-      email : email.value,
-      senha : senha.value,
-      cpf : cpf.value,
-      telefone : telefone.value,
+      nomeCad : nome.value,
+      emailCad : email.value,
+      senhaCad : senha.value,
+      cpfCad : cpf.value,
+      telefoneCad : telefone.value,
     });
 
     localStorage.setItem('listaUser', JSON.stringify(listaUser)); //Gravando no localStorage
 
-  } else {
-  }
+  // } else {
+  // }
 
 }
 
