@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
 
 * {
     margin:0;
-    padding:0;    
+    padding:0;   
+    font-family: "Sora", "Helvetica"; 
+}
+
+.apresentacao{
+    margin-top: 90px;
 }
 
 #logo{
@@ -12,9 +17,9 @@
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     width: 100%;
-    margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 .card{
@@ -49,6 +54,73 @@ h1{
     padding-top: 13px;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+    color: #272262;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label {
+    font-size: 13px;
+    margin-top: 0px;
+    color: #4038a0;
+
+}
+
+button{
+    background-color: transparent;
+    border-color: #272262;
+    color: #272262;
+    padding: 7px;
+    font-size:12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: #272262;
+    color: #FFF;
+    transition: all .3s ease-out;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;    
+}
+
+p{
+    color: #272262;
+    font-size: 14pt;
+    text-align: center;
+}
+
+a{
+    color: #7a3077;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: #272262;
 }
 
 #msgErro{
