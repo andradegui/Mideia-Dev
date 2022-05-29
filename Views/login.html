@@ -6,54 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="/logo.svg" />
   <link rel="stylesheet" href="/css/login.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Login</title>
+  <title>Login | Mideia</title>
 </head>
 
 <body>
-  <div class="apresentacao">
-    <h1>Mideia</h1>
+  <main>
 
-    <div id="logo">
-      <img src="/logo.svg" alt="Logo Mideia" style="width: 80px; height: 80px;">
+
+    <div class="apresentacao">
     </div>
-  </div>
 
-  <div class="container">
-    <div class="card">
-      <h1>Entrar</h1>
+    <div class="container">
 
-      <div class="label-float">
-        <input type="text" id="email" autocomplete="off">
-        <label for="email">Email</label>
+      <div class="card">
+        <h1>Mideia</h1>
+        <div id="logo">
+          <img src="/logo.svg" alt="Logo Mideia" style="width: 80px; height: 80px;">
+        </div>
+        <div>
+          <h3>Entrar</h3>
+        </div>
+
+        <div class="label-float">
+          <input type="text" id="email" autocomplete="off" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="label-float">
+          <input type="password" id="senha" required>
+          <label for="senha">Senha</label>
+          <i class="fa fa-eye"></i>
+        </div>
+
+        <div class="justify-center">
+          <button>Entrar</button>
+        </div>
+
+        <div class="justify-center">
+          <hr>
+        </div>
+
+        <p>Não tem uma conta?
+          <a href="/Views/cadastro.html">Cadastre-se</a>
+        </p>
       </div>
-
-      <div class="label-float">
-        <input type="password" id="senha">
-        <label for="senha">Senha</label>
-      </div>
-
-      <div class="justify-center">
-        <button>Entrar</button>
-      </div>
-
-      <div class="justify-center">
-        <hr>
-      </div>
-
-      <p>Não tem uma conta?
-        <a href="#">Cadastre-se</a>
-      </p>
     </div>
-  </div>
 
 
-  <footer>
-    <p>2022 Mideia</p>
-  </footer>
+    <footer>
+      <p class="white">2022 Mideia</p>
+    </footer>
 
-  <script src="/Controllers/animacao.js"></script>
-  <script src="/Controllers/autenticacao.js"></script>
+    <script src="/Controllers/login.js"></script>
 </body>
 
 </html>
