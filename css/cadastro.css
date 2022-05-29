@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;    
     width: 100%;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .card{
@@ -20,6 +20,24 @@
     border-radius: 4%;
     box-shadow: 10px 10px 10px 10px #00000030;
     width: 400px;
+}
+
+#msgError{
+    text-align: center;
+    color: #ba000d ;
+    background-color:#EA5A5A;;
+    padding:5px;
+    border-radius:10px;
+    display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: #4fac03;
+    background-color: #79eb79;
+    padding:5px;
+    border-radius:10px;
+    display: none;
 }
 
 h1{
@@ -107,25 +125,6 @@ button:hover{
 .justify-center{
     display: flex;
     justify-content: center;
-}
-
-
-#msgErro{
-    text-align: center;
-    color: #EA5A5A;
-    background-color: #de1414;
-    padding:10px;
-    border-radius:4px;
-    display: none;
-}
-
-#msgSuccess{
-    text-align: center;
-    color: #4ae94a;
-    background-color: #05c505;
-    padding:10px;
-    border-radius:4px;
-    display: none;
 }
 
 footer{

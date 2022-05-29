@@ -16,6 +16,10 @@
     <main>        
         <div class="container">
             <div class="card">
+
+                <div id="msgError"></div>
+                <div id="msgSuccess"></div>
+
                 <h1>Mideia</h1>
                 <div id="logo">
                     <img src="/logo.svg" alt="Logo Mideia" style="width: 80px; height: 80px;">
@@ -26,33 +30,33 @@
 
                 <div class="label-float">
                     <input type="text" id="nome" autocomplete="off" required>
-                    <label for="Nome">Nome</label>
+                    <label id="labelNome" for="Nome">Nome</label>
                 </div>
 
                 <div class="label-float">
                     <input type="text" id="email" autocomplete="off" required>
-                    <label for="email">Email</label>
+                    <label id="labelEmail" for="labelEmail">Email</label>
                 </div>
 
                 <div class="label-float">
                     <input type="password" id="senha" required>
-                    <label for="senha">Senha</label>
+                    <label id="labelSenha" for="Senha">Senha</label>
                     <i class="fa fa-eye"></i>
                 </div>
 
                 <div class="label-float">
                     <input type="text" id="cpf" autocomplete="off" required>
-                    <label for="CPF">CPF</label>
+                    <label id="labelCPF" for="CPF">CPF</label>
                 </div>
 
                 <div class="label-float">
                     <input type="text" id="celular" autocomplete="off" required>
-                    <label for="Celular">Celular</label>
+                    <label id="labelCelular" for="Celular">Celular</label>
                 </div>
 
 
                 <div class="justify-center">
-                    <button>Cadastrar</button>
+                    <button onclick="cadastrar()">Cadastrar</button>
                 </div>
             </div>
         </div>
